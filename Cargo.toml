@@ -1,0 +1,19 @@
+[package]
+name = "practice"
+version = "0.1.0"
+authors = ["Shalom <shalom@atins.io>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+
+[lib]
+name = "hello_macro"
+proc-macro = true
+path = "src/lib.rs"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
